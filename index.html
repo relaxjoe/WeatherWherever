@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Channel 9 Weather</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body class="bg-primary text-white">
+    <header class="text-center my-4">
+      <h1>Channel 9 Weather</h1>
+      <p>Check the weather for the past 5 days in your city</p>
+    </header>
+
+    <section id="city-selection" class="text-center my-4">
+      <form id="city-form" class="form-inline justify-content-center">
+        <input
+          type="text"
+          id="city"
+          name="city"
+          class="form-control mb-2 mr-sm-2"
+          placeholder="Enter city name"
+          required
+        />
+        <button type="submit" class="btn btn-info mb-2">Search</button>
+      </form>
+    </section>
+
+    <section id="weather-display" class="text-center mt-4">
+      <div id="weather-info" class="d-flex flex-wrap justify-content-around">
+        <!-- Weather data for each day will be inserted here -->
+      </div>
+    </section>
+
+    <footer class="text-center my-4">
+      <p>Weather data provided by API</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
